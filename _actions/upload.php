@@ -9,7 +9,7 @@ if ($error) {
     exit();
 }
 
-if ($type === "image/jpeg" or $type === "image/jpg") {
+if ($type === "image/jpeg" or $type === "image/png") {
     move_uploaded_file($tmp, "photos/profile.jpg");
     header('location: ../profile.php');
 } else {
